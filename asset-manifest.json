@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/night-toggle/static/css/main.7122291e.css",
-    "main.js": "/night-toggle/static/js/main.7135bbf8.js",
+    "main.js": "/night-toggle/static/js/main.f74891da.js",
     "index.html": "/night-toggle/index.html",
     "main.7122291e.css.map": "/night-toggle/static/css/main.7122291e.css.map",
-    "main.7135bbf8.js.map": "/night-toggle/static/js/main.7135bbf8.js.map"
+    "main.f74891da.js.map": "/night-toggle/static/js/main.f74891da.js.map"
   },
   "entrypoints": [
     "static/css/main.7122291e.css",
-    "static/js/main.7135bbf8.js"
+    "static/js/main.f74891da.js"
   ]
 }
