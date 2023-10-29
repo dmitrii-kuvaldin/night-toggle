@@ -5,6 +5,7 @@ import HomeworkPage from './components/homeworkPage/HomeworkPage';
 
 const App: FC = () => {
   const [isGlobalNightMode, setIsGlobalNightMode] = useState(() => {
+    console.log('done?');
     console.log("в сторадже лижит", localStorage.getItem('globalNightMode'));
     console.log("в сторадже лижит в беловом", !!localStorage.getItem('globalNightMode'));
     if (localStorage.getItem('globalNightMode') === 'true') {
@@ -46,6 +47,7 @@ const App: FC = () => {
       <Route path="/" element={<Layout isGlobalNightMode={isGlobalNightMode} onClick={toggleGlobalNightMode} />}>
         <Route index element={<HomeworkPage isGlobalNightMode={isGlobalNightMode} onClick={toggleGlobalNightMode} />} />
       </Route>
+      <Route path="*" element={<h1>Ошибка</h1>} />
     </Routes>
   );
 };
