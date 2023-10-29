@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  z-index: -2;
+}
+
+.header {
+  background-color: #F6F8FA;
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin: 0;
+  text-align: center;
+  font-family: segoe Script;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 1px;
+}
+
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  z-index: -1;
+}
+
+.toggleDiv {
+  display: flex;
+  right: 0.5%;
+  top: 0.5%;
+  position: absolute;
+}
+
+.container.night .body {
+  background-color: #282c34;
+}
+
+.container.night .header {
+  background-color: #282c34;
+}

@@ -1,0 +1,115 @@
+.toggle{
+    height: 35px;
+    width: 60px;
+    border-radius: 50px;
+    margin: auto;
+    background-image: linear-gradient(aqua,skyblue);
+    position: relative;
+    cursor: pointer;
+}
+
+.sunMoon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    top: 5%;
+    box-shadow: 0 0 5px yellow;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.sunMoon > .crater {
+    position: absolute;
+    background: #e7e5e5;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1) inset;
+    display: none;
+}
+
+.night  .sunMoon > .crater{
+    display: block;
+}
+
+.sunMoon > .crater:first-child{
+    height: 15px;
+    width: 20px;
+    top:10%;
+    left: 7%;
+    transform: rotate(-42deg);
+}
+
+.sunMoon > .crater:last-child{
+    height: 12px;
+    width: 20px;
+    top: 50%;
+    right: 0%;
+    transform: rotate(120deg);
+}
+
+.shape{
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.shape.sm{
+    height: 3px;
+    width: 15px;
+    top: 40%;
+    left: 65%;
+}
+
+.shape.md{
+    height: 7px;
+    width: 30px;
+    top: 18%;
+    left: 25%;
+    z-index: 2;
+}
+
+.shape.lg{
+    height: 8px;
+    width: 40px;
+    bottom: 15%;
+    left: 15%;
+}
+
+.toggle.night{
+    background-image: linear-gradient(midnightblue,rebeccapurple);
+}
+
+.night .sunMoon{
+    background: whitesmoke;
+    box-shadow: 0 0 5px whitesmoke;
+    transform: translate(30px,0px);
+}
+
+
+.night .shape{
+    background: lightgray;
+    box-shadow: 0 0 10px 2px violet;
+}
+
+.night .shape.sm{
+    height: 5px;
+    width: 5px;
+    transform: translate(-20px,10px);
+}
+.night .shape.sm:first-of-type{
+    transform: translate(-35px, -5px);
+}
+.night #nightShape{
+    transform: translate(-25px, 0px);
+}
+.night .shape.md{
+    height: 7px;
+    width: 7px;
+    transform: translate(5px,0px);
+}
+.night .shape.lg{
+    height: 10px;
+    width: 10px;
+    transform: translate(-5px,0);
+}
