@@ -1,13 +1,13 @@
 import styles from './homeworkPage.module.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 
 interface HomeworkPageProps {
   onClick: () => void;
-  isGlobalNightMode:boolean
+  isGlobalNightMode: boolean
 }
 
-function HomeworkPage({ onClick,isGlobalNightMode }: HomeworkPageProps) {
+function HomeworkPage({ onClick, isGlobalNightMode }: HomeworkPageProps) {
 
   const [toggled, setToggled] = useState(Boolean(localStorage.getItem('globalNightMode')))
 

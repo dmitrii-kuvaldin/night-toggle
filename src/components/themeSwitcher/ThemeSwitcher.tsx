@@ -8,10 +8,8 @@ interface IThemeSwitcher {
   isGlobalNightMode: boolean
 }
 const ThemeSwitcher = ({ onClick, isGlobalNightMode }: IThemeSwitcher): JSX.Element => {
-  console.log('что в свитчере', isGlobalNightMode);
   const [toggled, setToggled] = useState(isGlobalNightMode);
   const handleSwitch = () => {
-    console.log('handleSwitch');
     setToggled(prevValue => !prevValue)
     onClick(toggled)
   }
